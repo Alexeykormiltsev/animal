@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Poppins-Regular', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    src: local('Poppins-Regular'),
+        url('../fonts/Poppins-Regular.woff2') format('woff2');
+        font-display: swap;
+}
+@font-face {
+    font-family: 'Poppins-Black', sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    src: local('Poppins-Black'),
+        url('../fonts/Poppins-Black.woff2') format('woff2');
+        font-display: swap;
+}
+@font-face {
+    font-family: 'Poppins-Bold', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    src: local('Poppins-Bold'),
+        url('../fonts/Poppins-Bold.woff2') format('woff2');
+        font-display: swap;
+}
+@font-face {
+    font-family: 'Poppins-SemiBold', sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    src: local('Poppins-SemiBold'),
+        url('../fonts/Poppins-SemiBold.woff2') format('woff2');
+        font-display: swap;
+}
+@font-face {
+    font-family: 'OTFGlusp-Bold', sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    src: local('OTFGlusp-Bold'),
+        url('../fonts/OTFGlusp-Bold.woff2') format('woff2');
+        font-display: swap;
+}
+@font-face {
+    font-family: 'TitilliumWeb-Regular', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    src: local('TitilliumWeb-Regular'),
+        url('../fonts/TitilliumWeb-Regular.woff2') format('woff2');
+        font-display: swap;
+}
+@font-face {
+    font-family: 'TitilliumWeb-SemiBold', sans-serif;
+    font-weight: 800;
+    font-style: normal;
+    src: local('TitilliumWeb-SemiBold'),
+        url('../fonts/TitilliumWeb-SemiBold.woff2') format('woff2');
+        font-display: swap;
+}

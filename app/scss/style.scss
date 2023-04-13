@@ -1,0 +1,130 @@
+@import 'vars';
+@import 'fonts';
+@import 'reset';
+@import 'global';
+@import 'libs';
+
+.header {
+    padding: 30px 0 170px;
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 150px;
+    }
+
+    &__logo {
+        @extend %otf-700;
+        font-size: 14px;
+        line-height: 110%;
+        color: $text;
+        text-transform: uppercase;
+    }
+
+    .menu {
+        display: flex;
+        gap: 166px;
+        align-items: center;
+
+        &__list {
+            display: flex;
+            gap: 34px;
+            align-items: center;
+        }
+
+        &__link {
+            color: $text;
+            text-transform: capitalize;
+            line-height: 100%;
+            transition: all .4s;
+
+            &:hover,
+            &:focus {
+                text-decoration: underline;
+                color: $accent;
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        // justify-content: space-between;
+        // align-items: center;
+        gap: 168px;
+    }
+
+    &__slider-title {
+        @extend %otf-700;
+        font-size: 94px;
+        line-height: 100%;
+        color: $accent;
+        margin-bottom: 72px;
+        text-align: right;
+    }
+
+    &__slider {
+        margin-left: 100px;
+    }
+
+    .slider {
+        width: 387px;
+        height: 344px;
+    }
+
+    &__info {
+        max-width: 794px;
+    }
+
+    &__title {
+        @extend %otf-700;
+        font-size: 94px;
+        line-height: 85%;
+        text-transform: uppercase;
+        color: $bg;
+        width: 794px;
+        text-shadow:
+            -0 -1px 0 #FFFFFF,
+            0 -1px 0 #FFFFFF,
+            -0 1px 0 #FFFFFF,
+            0 1px 0 #FFFFFF,
+            -1px -0 0 #FFFFFF,
+            1px -0 0 #FFFFFF,
+            -1px 0 0 #FFFFFF,
+            1px 0 0 #FFFFFF,
+            -1px -1px 0 #FFFFFF,
+            1px -1px 0 #FFFFFF,
+            -1px 1px 0 #FFFFFF,
+            1px 1px 0 #FFFFFF,
+            -1px -1px 0 #FFFFFF,
+            1px -1px 0 #FFFFFF,
+            -1px 1px 0 #FFFFFF,
+            1px 1px 0 #FFFFFF;
+        margin-bottom: 18px;
+
+        span {
+            display: block;
+            color: $text
+        }
+    }
+
+    &__text {
+        max-width: 552px;
+        margin-bottom: 30px;
+        display: block;
+    }
+
+    &__info-link {
+        padding: 17px 26px;
+        @extend %otf-700;
+        color: $text;
+        text-transform: uppercase;
+        line-height: 100%;
+        letter-spacing: 0.05em;
+        background: $accent;
+    }
+}
+
+
+
+@import 'media';
