@@ -1,6 +1,6 @@
-@import 'vars';
 @import 'fonts';
 @import 'reset';
+@import 'vars';
 @import 'global';
 @import 'libs';
 
@@ -11,10 +11,10 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 150px;
+        margin-bottom: 168px;
     }
 
-    &__logo {
+    &__logo-title {
         @extend %otf-700;
         font-size: 14px;
         line-height: 110%;
@@ -29,7 +29,7 @@
 
         &__list {
             display: flex;
-            gap: 34px;
+            gap: 44px;
             align-items: center;
         }
 
@@ -49,27 +49,28 @@
 
     &__content {
         display: flex;
-        // justify-content: space-between;
-        // align-items: center;
-        gap: 168px;
+        justify-content: space-between;
     }
 
     &__slider-title {
         @extend %otf-700;
-        font-size: 94px;
+        font-size: 72px;
         line-height: 100%;
         color: $accent;
-        margin-bottom: 72px;
+        margin-bottom: 70px;
         text-align: right;
-    }
-
-    &__slider {
-        margin-left: 100px;
     }
 
     .slider {
         width: 387px;
         height: 344px;
+        margin-left: 50px;
+        padding-left: 50px;
+
+        &__photo {
+            min-height: 344px;
+            height: auto;
+        }
     }
 
     &__info {
@@ -78,11 +79,10 @@
 
     &__title {
         @extend %otf-700;
-        font-size: 94px;
-        line-height: 85%;
+        font-size: 64px;
+        line-height: 110%;
         text-transform: uppercase;
         color: $bg;
-        width: 794px;
         text-shadow:
             -0 -1px 0 #FFFFFF,
             0 -1px 0 #FFFFFF,
@@ -100,17 +100,18 @@
             1px -1px 0 #FFFFFF,
             -1px 1px 0 #FFFFFF,
             1px 1px 0 #FFFFFF;
-        margin-bottom: 18px;
+        margin-bottom: 24px;
 
         span {
             display: block;
-            color: $text
+            color: $text;
+            white-space: nowrap;
         }
     }
 
     &__text {
         max-width: 552px;
-        margin-bottom: 30px;
+        margin-bottom: 38px;
         display: block;
     }
 
@@ -122,6 +123,25 @@
         line-height: 100%;
         letter-spacing: 0.05em;
         background: $accent;
+    }
+
+    .swiper-horizontal>.swiper-pagination-bullets,
+    .swiper-pagination-bullets.swiper-pagination-horizontal {
+        bottom: 50%;
+        left: -174px;
+        width: 100%;
+        transform: rotate(90deg);
+    }
+
+    .swiper-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        background-color: #4E4E4E;
+        border-radius: 50%;
+    }
+
+    .swiper-pagination-bullet-active {
+        background-color: $accent;
     }
 }
 

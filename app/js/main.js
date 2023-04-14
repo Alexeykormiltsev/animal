@@ -9,6 +9,14 @@ $(function () {
             delay: 6000,
         },
         speed: 1500,
-        spaceBetween: 40,
+        spaceBetween: 70,
+        pagination: true,
+        navigation: false,
+        // If we need pagination
+        pagination: {
+          el: '.swiper-pagination',
+          clickable: true,
+        },
     });
+  
 });
