@@ -9,7 +9,7 @@ $(function () {
             delay: 6000,
         },
         speed: 1500,
-        spaceBetween: 70,
+        spaceBetween: 120,
         pagination: true,
         navigation: false,
         // If we need pagination
