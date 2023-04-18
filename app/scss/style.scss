@@ -165,7 +165,7 @@
         display: flex;
         gap: 32px;
         align-items: center;
-        margin-bottom: 45px;
+        margin-bottom: 46px;
     }
 
     &__number-line {
@@ -178,13 +178,13 @@
         @extend %otf-700;
         font-size: 24px;
         line-height: 100%;
-        color: #FFFFFF;
+        color: #fff;
     }
 
     &__items {
         display: flex;
         justify-content: space-around;
-        padding: 0 88px 0 210px;
+        padding: 0 88px 0 154px;
     }
 
     &__item {
@@ -195,6 +195,244 @@
 
     &__text {
         text-transform: capitalize;
+    }
+}
+
+.artist {
+    // position: relative;
+    padding-top: 150px;
+    padding-bottom: 1140px;
+
+    &__title {
+        @extend %otf-700;
+        font-size: 24px;
+        line-height: 100%;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: #fff;
+        margin-bottom: 28px;
+    }
+
+    &__number {
+        display: flex;
+        gap: 32px;
+        align-items: center;
+        margin-bottom: 46px;
+    }
+
+    &__number-line {
+        width: 100%;
+        height: 1px;
+        background: $accent;
+    }
+
+    &__number-symbol {
+        @extend %otf-700;
+        font-size: 24px;
+        line-height: 100%;
+        color: $accent;
+    }
+
+    &__content-title {
+        @extend %pop-700;
+        font-size: 24px;
+        line-height: 120%;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+    }
+
+    &__content {
+        position: relative;
+    }
+
+    &__content-title {
+        margin-top: 70px;
+    }
+
+    &__content-top {
+        display: flex;
+        gap: 116px;
+        padding-left: 188px;
+    }
+
+    &__content-center {
+        display: flex;
+        gap: 116px;
+        padding-left: 70px;
+        // align-items: center;
+        position: absolute;
+        top: 400px;
+    }
+
+    .center-wrap {
+        margin-top: 180px;
+    }
+
+    .center-title {
+        margin-top: 0;
+    }
+
+    &__content-bottom {
+        position: absolute;
+        top: 730px;
+        right: 120px;
+        // text-align: right;
+
+    }
+
+    .bottom-wrap {
+        margin-bottom: 80px;
+        // padding-left:203px ;
+        margin-left: 200px;
+    }
+
+    .link-box {
+        position: absolute;
+        top: 1240px;
+        left: 70px;
+
+        &__text {
+            margin-bottom: 23px;
+        }
+
+        &__link {
+            padding: 17px 26px;
+            @extend %otf-700;
+            color: $text;
+            text-transform: uppercase;
+            line-height: 100%;
+            letter-spacing: 0.05em;
+            background: $accent;
+        }
+    }
+}
+
+.project {
+    padding-bottom: 150px;
+    // padding-left: 80px;
+
+    &__title {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .artist__number {
+        margin-bottom: 50px;
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: 258px;
+    }
+
+    &__content {
+        max-width: 700px;
+    }
+
+    &__descr {
+        margin-left: 88px;
+
+        span {
+            color: $accent;
+            display: block;
+        }
+    }
+
+    &__content-title {
+        @extend %pop-700;
+        font-size: 24px;
+        line-height: 120%;
+        text-transform: uppercase;
+        margin-bottom: 34px;
+    }
+
+    &__content-text {
+        padding-left: 95px;
+        position: relative;
+        margin-bottom: 34px;
+
+        &::before {
+            position: absolute;
+            content: "“";
+            width: 60px;
+            height: 60px;
+            @extend %otf-700;
+            font-size: 96px;
+            text-transform: uppercase;
+            top: 30px;
+            left: 10px;
+        }
+    }
+
+    .descr-box {
+        display: flex;
+        gap: 42px;
+
+        span {
+            color: $accent;
+        }
+    }
+}
+
+.roadmap {
+    padding-bottom: 150px;
+
+    &__title {
+        text-align: center;
+    }
+
+    &__wrapper {
+        display: flex;
+        gap: 220px;
+    }
+
+    &__descr {
+        margin-left: 88px;
+        max-width: 203px;
+
+        span {
+            color: $accent;
+        }
+    }
+
+    &__item {
+        @extend %otf-700;
+        font-size: 36px;
+        text-transform: uppercase;
+        color: $accent;
+        margin-right: 30px;
+        padding: 20px 30px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: $accent;
+            color: #000;
+            margin-right: 50px;
+
+            .hov {
+                display: inline-block;
+            }
+
+            .roadmap__item-span {
+                color: #000;
+            }
+        }
+    }
+
+    &__item-span {
+        font-size: 16px;
+        color: #fff;
+        @extend %pop-400;
+        text-transform: none;
+    }
+
+    .hov {
+        display: none;
+        font-size: 16px;
+        color: #fff;
+        @extend %pop-400;
+        text-transform: none;
+        color: #000;
     }
 }
 
