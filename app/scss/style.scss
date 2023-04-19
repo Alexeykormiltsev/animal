@@ -402,20 +402,30 @@
         color: $accent;
         margin-right: 30px;
         padding: 20px 30px;
-        cursor: pointer;
 
-        &:hover {
-            background-color: $accent;
+        // &:hover {
+        //     background-color: $accent;
+        //     color: #000;
+        //     margin-right: 50px;
+
+        //     .hov {
+        //         display: inline-block;
+        //     }
+
+        //     .roadmap__item-span {
+        //         color: #000;
+        //     }
+        // }
+    }
+
+    &__item-hov {
+        padding: 20px 30px;
+        color: #000;
+        background-color: $accent;
+        margin-left: -80px;
+
+        span {
             color: #000;
-            margin-right: 50px;
-
-            .hov {
-                display: inline-block;
-            }
-
-            .roadmap__item-span {
-                color: #000;
-            }
         }
     }
 
@@ -427,12 +437,90 @@
     }
 
     .hov {
-        display: none;
+        // display: none;
         font-size: 16px;
-        color: #fff;
         @extend %pop-400;
         text-transform: none;
         color: #000;
+    }
+}
+
+.team {
+    padding-bottom: 206px;
+
+    &__number {
+        margin-bottom: 50px;
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 226px;
+        position: relative;
+    }
+
+    &__left {
+        margin-left: 88px;
+        max-width: 285px;
+        padding-bottom: 200px;
+    }
+
+    &__left-title {
+        @extend %til-400;
+        font-size: 24px;
+        line-height: 120%;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        padding-top: 24px;
+    }
+
+    &__left-text {
+        @extend %til-400;
+        font-size: 14px;
+        line-height: 160%;
+        margin-bottom: 20px;
+    }
+
+    &__img {
+        margin-bottom: 14px;
+        object-fit: contain;
+    }
+
+    .name {
+        @extend %otf-700;
+        font-size: 24px;
+        line-height: 160%;
+        color: $accent;
+
+        span {
+            display: block;
+            @extend %pop-400;
+            color: #fff;
+            font-size: 16px;
+            line-height: 160%;
+            text-transform: lowercase;
+        }
+    }
+
+    .right-name {
+        margin-left: 296px;
+    }
+
+    &__right {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin: 0;
+    }
+
+    .before-box {
+        position: absolute;
+        bottom: -58px;
+        left: 394px;
     }
 }
 
