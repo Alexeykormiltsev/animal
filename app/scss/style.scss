@@ -50,7 +50,6 @@
     &__content {
         display: flex;
         justify-content: space-between;
-        // gap: 120px;
     }
 
     &__slider-title {
@@ -456,7 +455,7 @@
     }
 
     &__left-title {
-        @extend %til-400;
+        @extend %til-600;
         font-size: 24px;
         line-height: 120%;
         text-transform: uppercase;
@@ -511,11 +510,129 @@
 }
 
 .faq {
+    padding-bottom: 150px;
 
     &__title {
         text-align: center;
     }
+
+    &__inner {
+        max-width: 996px;
+        margin: 0 auto;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        padding: 18px 0;
+        border-top: 1px solid #4E4E4E;
+
+        &:nth-child(5) {
+            border-bottom: 1px solid #4E4E4E;
+        }
+    }
+
+    .item-wrap {
+        display: flex;
+        align-items: center;
+        gap: 390px;
+
+    }
+
+    &__item-number {
+        line-height: 100%;
+        letter-spacing: 0.08em;
+    }
+
+    &__link-box {
+        display: flex;
+        width: 584px;
+        justify-content: space-between;
+    }
+
+    &__text-link {
+        @extend %pop-700;
+        color: #fff;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0.08em;
+    }
+
+    &__answer {
+        display: none;
+        margin-top: 18px;
+        max-width: 390px;
+        margin-left: 410px;
+        transition: all .4s;
+    }
+
+    .faq__answer--active {
+        display: block;
+        transition: all .4s;
+    }
+
+    .img--active {
+        transform: rotate(180deg);
+        transition: all .4s;
+    }
 }
 
+.footer {
+    &__top {
+        margin-bottom: 146px;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+        text-align: center;
+    }
+
+    &__title {
+        @extend %otf-700;
+        font-size: 64px;
+        line-height: 160%;
+        text-transform: uppercase;
+
+        span {
+            text-transform: uppercase;
+            color: $bg;
+            text-shadow:
+                -0 -1px 0 #FFFFFF,
+                0 -1px 0 #FFFFFF,
+                -0 1px 0 #FFFFFF,
+                0 1px 0 #FFFFFF,
+                -1px -0 0 #FFFFFF,
+                1px -0 0 #FFFFFF,
+                -1px 0 0 #FFFFFF,
+                1px 0 0 #FFFFFF,
+                -1px -1px 0 #FFFFFF,
+                1px -1px 0 #FFFFFF,
+                -1px 1px 0 #FFFFFF,
+                1px 1px 0 #FFFFFF,
+                -1px -1px 0 #FFFFFF,
+                1px -1px 0 #FFFFFF,
+                -1px 1px 0 #FFFFFF,
+                1px 1px 0 #FFFFFF;
+        }
+    }
+
+    &__top-link {
+        @extend %otf-700;
+        background: $accent;
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        font-size: 24px;
+        line-height: 120%;
+        text-transform: uppercase;
+        color: #fff;
+        text-align: center;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
 
 @import 'media';
