@@ -514,6 +514,7 @@
 
     &__title {
         text-align: center;
+        margin-right: 88px;
     }
 
     &__inner {
@@ -616,6 +617,12 @@
         }
     }
 
+    &__top-linkbox {
+        display: flex;
+        gap: 66px;
+        margin-right: 150px;
+    }
+
     &__top-link {
         @extend %otf-700;
         background: $accent;
@@ -631,8 +638,40 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        position: relative;
     }
 
+    &__center {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-bottom: 10px;
+        margin-bottom: 24px;
+        border-bottom: 1px solid #4E4E4E;
+    }
+
+    &__linkbox {
+        display: flex;
+        gap: 213px;
+        border-bottom: 2px solid $accent;
+        padding-bottom: 16px;
+        margin-bottom: -19px;
+    }
+
+    &__linkbox-link {
+        line-height: 100%;
+        text-transform: capitalize;
+        color: #fff;
+    }
+
+    .e-mail {
+        color: #606060;
+    }
+
+    .social {
+        display: flex;
+        gap: 16px;
+    }
 }
 
 @import 'media';
