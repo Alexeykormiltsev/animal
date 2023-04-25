@@ -7,11 +7,19 @@
 .header {
     padding: 30px 0 170px;
 
+    .header-top {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+    }
+
     &__top {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin-bottom: 168px;
+        
     }
 
     &__logo-title {
@@ -26,6 +34,7 @@
         display: flex;
         gap: 166px;
         align-items: center;
+
 
         &__list {
             display: flex;
@@ -50,6 +59,7 @@
     &__content {
         display: flex;
         justify-content: space-between;
+        padding-top: 168px;
     }
 
     &__slider-title {
@@ -579,6 +589,8 @@
 }
 
 .footer {
+    padding-bottom: 30px;
+
     &__top {
         margin-bottom: 146px;
         align-items: center;
@@ -671,6 +683,40 @@
     .social {
         display: flex;
         gap: 16px;
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__copy {
+        font-size: 12px;
+        line-height: 100%;
+        color: #606060;
+        text-transform: capitalize;
+    }
+
+    .menu {
+        &__list {
+            display: flex;
+            gap: 44px;
+            align-items: center;
+        }
+
+        &__link {
+            color: $text;
+            text-transform: capitalize;
+            line-height: 100%;
+            transition: all .4s;
+
+            &:hover,
+            &:focus {
+                text-decoration: underline;
+                color: $accent;
+            }
+        }
     }
 }
 
