@@ -9,7 +9,7 @@
 
     .header-top {
         position: fixed;
-        top: 0;
+        top: 30px;
         left: 0;
         right: 0;
         z-index: 999;
@@ -19,7 +19,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        
+
     }
 
     &__logo-title {
@@ -35,7 +35,6 @@
         gap: 166px;
         align-items: center;
 
-
         &__list {
             display: flex;
             gap: 44px;
@@ -48,18 +47,67 @@
             line-height: 100%;
             transition: all .4s;
 
-            &:hover,
-            &:focus {
-                text-decoration: underline;
-                color: $accent;
+            @media(min-width: 1060px) {
+
+                &:hover,
+                &:focus {
+                    text-decoration: underline;
+                    color: $accent;
+                }
             }
         }
     }
 
+    .burger {
+        display: none;
+
+        &__btn {
+            position: relative;
+            z-index: 2;
+            background-color: transparent;
+            border: none;
+            padding: 0;
+            cursor: pointer;
+            color: #fff;
+            display: flex;
+            gap: 12px;
+            text-transform: capitalize;
+            font-size: 12px;
+            transition: all .5s;
+        }
+
+        &__btn--active {
+            // font-size: 14px;
+            transition: all .5s;
+            margin-right: 30px;
+        }
+    }
+
+    .burger--active {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        animation-name: rotation;
+        animation-duration: 2.3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+    }
+
+    @keyframes rotation {
+        0% {
+            transform: rotate(0deg);
+        }
+
+        100% {
+            transform: rotate(-360deg);
+        }
+    }
+
+
     &__content {
         display: flex;
         justify-content: space-between;
-        padding-top: 168px;
+        padding-top: 200px;
     }
 
     &__slider-title {
@@ -69,6 +117,10 @@
         color: $accent;
         margin-bottom: 74px;
         text-align: right;
+    }
+
+    &__slider-toptitle {
+        display: none;
     }
 
     .slider {
@@ -134,6 +186,10 @@
         line-height: 100%;
         letter-spacing: 0.05em;
         background: $accent;
+    }
+
+    &__bottom-link {
+        display: none;
     }
 
     .swiper-horizontal>.swiper-pagination-bullets,

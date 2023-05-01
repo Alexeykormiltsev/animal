@@ -24,6 +24,12 @@ $(function () {
         $('#img').toggleClass('img--active');
     });
 
+    $('.burger').on('click', function () {
+        $('.menu__list').toggleClass('menu__list--active');
+        $('.burger__img').toggleClass('burger--active');
+        $('.burger__btn').toggleClass('burger__btn--active');
+    });
+
 
     $(".menu").on("click", "a", function (event) {
         //отменяем стандартную обработку нажатия по ссылке
