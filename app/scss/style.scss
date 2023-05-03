@@ -65,7 +65,7 @@
             position: relative;
             z-index: 2;
             background-color: transparent;
-            border: none;
+            border: 1px solid transparent;
             padding: 0;
             cursor: pointer;
             color: #fff;
@@ -77,9 +77,8 @@
         }
 
         &__btn--active {
-            // font-size: 14px;
             transition: all .5s;
-            margin-right: 30px;
+            border: 1px solid transparent;
         }
     }
 
@@ -88,7 +87,7 @@
         align-items: center;
         justify-content: center;
         animation-name: rotation;
-        animation-duration: 2.3s;
+        animation-duration: 2.6s;
         animation-iteration-count: infinite;
         animation-timing-function: linear;
     }
@@ -246,6 +245,10 @@
         color: #fff;
     }
 
+    &__number-title {
+        display: none;
+    }
+
     &__items {
         display: flex;
         justify-content: space-around;
@@ -264,9 +267,12 @@
 }
 
 .artist {
-    // position: relative;
     padding-top: 150px;
     padding-bottom: 1140px;
+
+    &__mobile-img {
+        display: none;
+    }
 
     &__title {
         @extend %otf-700;
@@ -283,6 +289,10 @@
         gap: 32px;
         align-items: center;
         margin-bottom: 46px;
+    }
+
+    &__number-title {
+        display: none;
     }
 
     &__number-line {
