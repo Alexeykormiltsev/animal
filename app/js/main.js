@@ -18,6 +18,23 @@ $(function () {
             clickable: true,
         },
     });
+    const swip = new Swiper('.slider-team', {
+
+        direction: 'horizontal',
+        loop: true,
+        autoplay: {
+            delay: 4000,
+        },
+        speed: 1500,
+        spaceBetween: 100,
+        pagination: true,
+        navigation: false,
+        // If we need pagination
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
 
     $('#text-link,#img').on('click', function () {
         $('.faq__answer').toggleClass('faq__answer--active');
