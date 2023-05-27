@@ -863,9 +863,12 @@
 
 @media(max-width: 440px) {
     .team {
+    &__left{
+     margin-left: 30px;
+    }
         .swiper-pagination-bullets.swiper-pagination-horizontal {
             bottom: 56%;
-            left: -174px;
+            left: -180px;
             display: block;
         }
     }
